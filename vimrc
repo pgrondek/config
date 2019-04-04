@@ -1,0 +1,21 @@
+"colorscheme badwolf
+" Indent
+set autoindent
+set softtabstop=4
+set tabstop=4
+set expandtab
+
+" Search
+set incsearch
+set hlsearch
+set ignorecase
+
+" Tabs
+:au BufAdd,BufNewFile,BufRead * nested tab sball
+
+set laststatus=2 " Always show a status bar
+set scrolloff=3 " Keep n lines when scrolling
+set showcmd " show command in bar
+set number " show line numbers
+set wildmenu " visual autocomplete for command menu
+set tabpagemax=10

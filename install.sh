@@ -1,5 +1,5 @@
 #!/bin/sh
 
-rm $HOME/.vimrc &> /dev/null
+rm -f $HOME/.vimrc
 
-ln -s vimrc ~/.vimrc
+ln -s $(pwd)/vimrc $HOME/.vimrc

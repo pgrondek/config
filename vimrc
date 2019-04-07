@@ -12,6 +12,8 @@ set ignorecase
 
 " Tabs
 :au BufAdd,BufNewFile,BufRead * nested tab sball
+set splitbelow 
+set splitright
 
 set laststatus=2 " Always show a status bar
 set scrolloff=3 " Keep n lines when scrolling

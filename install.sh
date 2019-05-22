@@ -11,4 +11,4 @@ ln -s $(pwd)/bash_aliases $HOME/.bash_aliases
 ln -s $(pwd)/ideavimrc $HOME/.ideavimrc
 
 # Gnome
-dconf load /org/gnome/desktop/ < gnome/desktop.txt
+# dconf load /org/gnome/desktop/ < gnome/desktop.txt

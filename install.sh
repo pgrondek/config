@@ -17,7 +17,7 @@ ln -s $(pwd)/ideavimrc $HOME/.ideavimrc
 ln -s $(pwd)/i3-config $HOME/.config/i3/config
 ln -s $(pwd)/i3status.conf $HOME/.i3status.conf
 
-ln -s $(pwd)/scripts/i3lock $HOME/bin/i3lock
+ln -s $(pwd)/scripts/lock $HOME/bin/lock
 
 # Gnome
 # dconf load /org/gnome/desktop/ < gnome/desktop.txt

@@ -8,6 +8,7 @@ rm -f $HOME/.config/i3/config
 rm -f $HOME/.i3status.conf
 
 mkdir -p $HOME/.i3/
+mkdir -p $HOME/bin/
 
 ln -s $(pwd)/vimrc $HOME/.vimrc
 ln -s $(pwd)/bashrc $HOME/.bashrc
@@ -15,6 +16,8 @@ ln -s $(pwd)/bash_aliases $HOME/.bash_aliases
 ln -s $(pwd)/ideavimrc $HOME/.ideavimrc
 ln -s $(pwd)/i3-config $HOME/.config/i3/config
 ln -s $(pwd)/i3status.conf $HOME/.i3status.conf
+
+ln -s $(pwd)/scripts/i3lock $HOME/bin/i3lock
 
 # Gnome
 # dconf load /org/gnome/desktop/ < gnome/desktop.txt

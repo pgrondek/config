@@ -184,3 +184,32 @@ bar {
 }
 
 bindsym Mod4+Escape exec lock
+
+set $displayMode "Set display mode [w]ork [l]aptop"
+bindsym Mod4+x mode $displayMode
+
+mode $displayMode {
+    bindsym l exec "single-monitor" \
+        mode "default"
+
+    bindsym w exec "multi-monitor" \
+        mode "default"
+
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
+set $workspaceMove "Move workspace ←/h →/l"
+bindsym Mod4+grave mode $workspaceMove
+
+mode $workspaceMove {
+    bindsym Left    "move workspace to output left"
+    bindsym Right   "move workspace to output right"
+
+    bindsym h       "move workspace to output left"
+    bindsym l       "move workspace to output right"
+
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+    bindsym Mod4+grave mode "default"
+}

@@ -183,3 +183,4 @@ bar {
     position top
 }
 
+bindsym Mod4+Escape exec lock

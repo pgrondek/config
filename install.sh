@@ -6,8 +6,9 @@ rm -f $HOME/.bash_aliases
 rm -f $HOME/.ideavimrc
 rm -f $HOME/.config/i3/config
 rm -f $HOME/.i3status.conf
+rm -f $HOME/bin/lock
 
-mkdir -p $HOME/.i3/
+mkdir -p $HOME/.config/i3
 mkdir -p $HOME/bin/
 
 ln -s $(pwd)/vimrc $HOME/.vimrc

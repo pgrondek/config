@@ -13,4 +13,4 @@ label=CPU
 interval=1
 
 [date]
-interval=60
+interval=5

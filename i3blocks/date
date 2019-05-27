@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+FORMAT=+%Y.%m.%d\ %H:%M
+
+date "$FORMAT"

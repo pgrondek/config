@@ -11,3 +11,6 @@ signal=10
 [cpu]
 label=CPU
 interval=1
+
+[date]
+interval=60

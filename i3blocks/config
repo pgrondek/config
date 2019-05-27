@@ -13,4 +13,5 @@ label=CPU
 interval=1
 
 [date]
+label=📅
 interval=5

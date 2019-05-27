@@ -2,7 +2,8 @@
     monitor = 1
     follow = none
     geometry = "300x5-30+30"
-    shrink = no
+    indicate_hidden = yes
+    shrink = yes
     separator_height = 1
     padding = 8
     horizontal_padding = 8
@@ -10,7 +11,7 @@
     sort = yes
 
 # Text
-    font = Roboto 12
+    font = Roboto 10
     line_height = 0
     markup = full
     format = "<b>%s</b>\n%b"
@@ -20,9 +21,8 @@
     ignore_newline = no
     stack_duplicates = false
     show_indicators = yes
-    icon_position = left
-    max_icon_size = 32
-    icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
+    icon_position = off
+    max_fieldlength = 200
 
 [frame]
     width = 0
@@ -39,8 +39,8 @@
     timeout = 10
 
 [urgency_normal]
-    background = "#757575"
-    foreground = "#000000"
+    background = "#ffffff"
+    foreground = "#5f6368"
     timeout = 15
 
 [urgency_critical]

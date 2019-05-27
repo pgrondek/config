@@ -215,7 +215,7 @@ mode $workspaceMove {
     bindsym Mod4+grave mode "default"
 }
 
-for_window [class="Firefox"] border pixel 0
+for_window [class="Firefox" instance="Navigator"] border pixel 0
 for_window [class="Slack"] border pixel 0
 # Citrix workspace
 for_window [class="Wfica"] border pixel 0

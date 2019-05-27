@@ -1,0 +1,13 @@
+# Global properties
+command=~/.config/i3blocks/$BLOCK_NAME
+separator_block_width=15
+markup=none
+
+[volume]
+label=🔈
+interval=once
+signal=10
+
+[cpu]
+label=CPU
+interval=1

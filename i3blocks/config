@@ -17,6 +17,10 @@ signal=10
 label=CPU
 interval=1
 
+[memory]
+label=MEM
+interval=10
+
 [date]
 label=📅
 interval=5

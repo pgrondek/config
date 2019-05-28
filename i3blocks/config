@@ -3,6 +3,11 @@ command=~/.config/i3blocks/$BLOCK_NAME
 separator_block_width=15
 markup=none
 
+[brightness]
+label=🔆
+interval=once
+signal=10
+
 [volume]
 label=🔈
 interval=once

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-utilisation=$(mpstat 1 1 --dec=0 | tail -n 1 | awk '{print $3}' )%
+utilisation=$(mpstat 1 1 | tail -n 1 | awk '{print $3}' )%
 temperature_path=/sys/devices/platform/coretemp.0/hwmon/hwmon*/temp1_input
 load="↑ $(awk '{print $1}' /proc/loadavg)"
 temperature=$(($(cat $temperature_path)/1000))°C

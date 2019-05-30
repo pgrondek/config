@@ -23,7 +23,7 @@ ln -s $(pwd)/i3status.conf $HOME/.i3status.conf
 ln -s $(pwd)/i3blocks $HOME/.config/i3blocks
 ln -s $(pwd)/dunstrc $HOME/.config/dunst/dunstrc
 
-ln -s $(pwd)/scripts/lock $HOME/bin/lock
+ln -s $(pwd)/bin/lock $HOME/bin/lock
 
 # Gnome
 # dconf load /org/gnome/desktop/ < gnome/desktop.txt

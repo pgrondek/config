@@ -9,6 +9,8 @@ rm -f $HOME/.config/dunst/dunstrc
 rm -f $HOME/.config/i3blocks
 rm -f $HOME/.i3status.conf
 rm -f $HOME/bin/lock
+rm -f $HOME/bin/transmission-add
+rm -f $HOME/.local/share/applications/torrent.desktop
 
 mkdir -p $HOME/.config/i3
 mkdir -p $HOME/.config/dunst
@@ -24,6 +26,8 @@ ln -s $(pwd)/i3blocks $HOME/.config/i3blocks
 ln -s $(pwd)/dunstrc $HOME/.config/dunst/dunstrc
 
 ln -s $(pwd)/bin/lock $HOME/bin/lock
+ln -s $(pwd)/bin/transmission-add $HOME/bin/transmission-add
+ln -s $(pwd)/local/share/applications/torrent.desktop $HOME/.local/share/applications/torrent.desktop
 
 # Gnome
 # dconf load /org/gnome/desktop/ < gnome/desktop.txt

@@ -1,5 +1,0 @@
-set incsearch
-set hlsearch
-set ignorecase
-
-set scrolloff=3 " Keep n lines when scrolling

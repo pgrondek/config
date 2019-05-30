@@ -21,13 +21,9 @@ ln -s $(pwd)/bashrc $HOME/.bashrc
 ln -s $(pwd)/bash_aliases $HOME/.bash_aliases
 ln -s $(pwd)/ideavimrc $HOME/.ideavimrc
 ln -s $(pwd)/i3-config $HOME/.config/i3/config
-ln -s $(pwd)/i3status.conf $HOME/.i3status.conf
 ln -s $(pwd)/i3blocks $HOME/.config/i3blocks
 ln -s $(pwd)/dunstrc $HOME/.config/dunst/dunstrc
 
 ln -s $(pwd)/bin/lock $HOME/bin/lock
 ln -s $(pwd)/bin/transmission-add $HOME/bin/transmission-add
 ln -s $(pwd)/local/share/applications/torrent.desktop $HOME/.local/share/applications/torrent.desktop
-
-# Gnome
-# dconf load /org/gnome/desktop/ < gnome/desktop.txt

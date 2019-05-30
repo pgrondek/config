@@ -1,2 +1,1 @@
-[Default Applications]
-x-scheme-handler/magnet=torrent.desktop;
+x-scheme-handler/magnet=torrent.desktop

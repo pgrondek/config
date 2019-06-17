@@ -220,3 +220,4 @@ for_window [class="jetbrains-toolbox"] floating enable
 for_window [class="Slack"] border pixel 0
 # Citrix workspace
 for_window [class="Wfica"] border pixel 0
+for_window [class="PrimaryAuthManager"] floating enable

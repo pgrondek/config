@@ -7,6 +7,7 @@ rm -f $HOME/.ideavimrc
 rm -f $HOME/.config/i3/config
 rm -f $HOME/.config/dunst/dunstrc
 rm -f $HOME/.config/i3blocks
+rm -f $HOME/.config/compton.conf
 rm -f $HOME/.i3status.conf
 rm -f $HOME/bin/lock
 rm -f $HOME/bin/transmission-add
@@ -22,6 +23,7 @@ ln -s $(pwd)/bash_aliases $HOME/.bash_aliases
 ln -s $(pwd)/ideavimrc $HOME/.ideavimrc
 ln -s $(pwd)/i3-config $HOME/.config/i3/config
 ln -s $(pwd)/i3blocks $HOME/.config/i3blocks
+ln -s $(pwd)/compton.conf $HOME/.config/compton.conf
 ln -s $(pwd)/dunstrc $HOME/.config/dunst/dunstrc
 
 ln -s $(pwd)/bin/lock $HOME/bin/lock

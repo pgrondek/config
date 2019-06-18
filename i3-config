@@ -215,6 +215,8 @@ mode $workspaceMove {
     bindsym Mod4+grave mode "default"
 }
 
+exec --no-startup-id compton --config ~/.config/compton.conf -b
+
 for_window [class="Firefox" instance="Navigator"] border pixel 0
 for_window [class="jetbrains-toolbox"] floating enable
 for_window [class="Slack"] border pixel 0

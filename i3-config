@@ -228,6 +228,3 @@ for_window [class="^jetbrains-.+"][window_type=dialog] focus
 # Citrix workspace
 for_window [class="Wfica"] border pixel 0
 for_window [class="PrimaryAuthManager"] floating enable
-
-# Disable focusing by mouse
-#focus_follows_mouse no

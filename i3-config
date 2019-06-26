@@ -215,7 +215,11 @@ mode $workspaceMove {
     bindsym Mod4+grave mode "default"
 }
 
+# vsync
 exec --no-startup-id compton --config ~/.config/compton.conf -b
+
+# polkit for authentication as root
+exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
 
 for_window [class="Firefox" instance="Navigator"] border pixel 0
 for_window [class="jetbrains-toolbox"] floating enable
@@ -226,4 +230,4 @@ for_window [class="Wfica"] border pixel 0
 for_window [class="PrimaryAuthManager"] floating enable
 
 # Disable focusing by mouse
-focus_follows_mouse no
+#focus_follows_mouse no

@@ -224,7 +224,7 @@ exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agen
 for_window [class="Firefox" instance="Navigator"] border pixel 0
 for_window [class="jetbrains-toolbox"] floating enable
 for_window [class="Slack"] border pixel 0
-for_window [class="^jetbrains-.+"][window_type=dialog] focus
+for_window [class="^jetbrains-.+"][window_type=dialog] floating enable
 # Citrix workspace
 for_window [class="Wfica"] border pixel 0
 for_window [class="PrimaryAuthManager"] floating enable

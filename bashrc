@@ -2,6 +2,9 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+SERVER_FLAG_FILE=$HOME/.server
+WORK_FLAG_FILE=$HOME/.work
+
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -57,7 +60,15 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+    if [ -f $SERVER_FLAG_FILE ]; then
+        PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\[\033[34m\]\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+    else
+        if [ -f $WORK_FLAG_FILE ]; then
+            PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\[\033[33m\]\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+        else
+            PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+        fi
+    fi
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi

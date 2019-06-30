@@ -2,8 +2,8 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
-SERVER_FLAG_FILE=$HOME/.server
-WORK_FLAG_FILE=$HOME/.work
+SERVER_FLAG_FILE=/etc/.server
+WORK_FLAG_FILE=/etc/.work
 
 # If not running interactively, don't do anything
 case $- in

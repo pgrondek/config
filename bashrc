@@ -60,15 +60,17 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
+    PS1='${debian_chroot:+($debian_chroot)}'
+    PS1="${PS1}\[\033[01;32m\]\u@"
     if [ -f $SERVER_FLAG_FILE ]; then
-        PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\[\033[34m\]\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
-    else
-        if [ -f $WORK_FLAG_FILE ]; then
-            PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\[\033[33m\]\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
-        else
-            PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
-        fi
+        PS1="${PS1}\[\033[34m\]\h"
     fi
+    if [ -f $WORK_FLAG_FILE ]; then
+        PS1='${PS1}\[\033[33m\]\h'
+    else
+        PS1="${PS1}\[\033[32m\]\h"
+    fi
+    PS1="${PS1}\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ "
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi

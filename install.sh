@@ -18,6 +18,7 @@ mkdir -p $HOME/.config/i3
 mkdir -p $HOME/.config/dunst
 mkdir -p $HOME/bin/
 mkdir -p $HOME/.ssh
+mkdir -p $HOME/.local/share/applications
 
 ln -s $(pwd)/vimrc $HOME/.vimrc
 ln -s $(pwd)/bashrc $HOME/.bashrc

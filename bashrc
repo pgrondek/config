@@ -66,7 +66,7 @@ if [ "$color_prompt" = yes ]; then
         PS1="${PS1}\[\033[34m\]\h"
     fi
     if [ -f $WORK_FLAG_FILE ]; then
-        PS1='${PS1}\[\033[33m\]\h'
+        PS1="${PS1}\[\033[33m\]\h"
     else
         PS1="${PS1}\[\033[32m\]\h"
     fi

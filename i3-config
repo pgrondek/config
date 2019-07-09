@@ -228,6 +228,7 @@ for_window [class="^jetbrains-.+"][window_type=dialog] floating enable
 for_window [class="XCalc"] floating enable
 for_window [class="Steam" title="Friends List"] floating enable
 for_window [class="Steam" title="^Steam - News.+"] floating enable
+for_window [class="Steam" title="Steam - Self Updater"] floating enable
 # Citrix workspace
 for_window [class="Wfica"] border pixel 0
 for_window [class="PrimaryAuthManager"] floating enable

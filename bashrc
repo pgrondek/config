@@ -2,14 +2,18 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
-SERVER_FLAG_FILE=/etc/.server
-WORK_FLAG_FILE=/etc/.work
 
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
       *) return;;
 esac
+
+# defining computer type for shell coloring
+TYPE_FILE=/etc/.computer-type
+if [[ -f ${TYPE_FILE} ]]; then
+    computer_type=$(cat $TYPE_FILE)
+fi
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
@@ -62,14 +66,19 @@ fi
 if [ "$color_prompt" = yes ]; then
     PS1='${debian_chroot:+($debian_chroot)}'
     PS1="${PS1}\[\033[01;32m\]\u@"
-    if [ -f $SERVER_FLAG_FILE ]; then
-        PS1="${PS1}\[\033[34m\]\h"
-    fi
-    if [ -f $WORK_FLAG_FILE ]; then
-        PS1="${PS1}\[\033[33m\]\h"
-    else
-        PS1="${PS1}\[\033[32m\]\h"
-    fi
+    case $computer_type in
+        desktop)
+            PS1="${PS1}\[\033[32m\]\h"
+        ;;
+        server)
+            PS1="${PS1}\[\033[34m\]\h"
+        ;;
+        work)
+            PS1="${PS1}\[\033[33m\]\h"
+        ;;
+        *)
+            PS1="${PS1}\[\033[00m\]\h"
+    esac
     PS1="${PS1}\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ "
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '

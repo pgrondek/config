@@ -1,4 +1,4 @@
-PACKAGES=vim git traceroute command-not-found dnsutils firefox
+PACKAGES=vim git traceroute command-not-found dnsutils firefox-esr
 RM_PACKAGES=nano
 
 APT=aptitude
@@ -11,4 +11,4 @@ install: $(APTITUDE)
 
 $(APTITUDE):
 	apt update
-	apt install $(APT)
+	apt install -y $(APT)

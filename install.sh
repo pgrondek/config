@@ -1,7 +1,5 @@
 #!/bin/sh
 
-rm -f $HOME/.vimrc
-rm -f $HOME/.ideavimrc
 rm -f $HOME/.config/i3/config
 rm -f $HOME/.config/dunst/dunstrc
 rm -f $HOME/.config/i3blocks
@@ -18,8 +16,6 @@ mkdir -p $HOME/bin/
 mkdir -p $HOME/.ssh
 mkdir -p $HOME/.local/share/applications
 
-ln -s $(pwd)/vimrc $HOME/.vimrc
-ln -s $(pwd)/ideavimrc $HOME/.ideavimrc
 ln -s $(pwd)/i3-config $HOME/.config/i3/config
 ln -s $(pwd)/i3blocks $HOME/.config/i3blocks
 ln -s $(pwd)/compton.conf $HOME/.config/compton.conf

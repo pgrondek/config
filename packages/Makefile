@@ -1,4 +1,4 @@
-PACKAGES=vim git traceroute command-not-found dnsutils firefox-esr
+PACKAGES=vim git traceroute command-not-found dnsutils firefox-esr screen
 RM_PACKAGES=nano
 
 APT=aptitude

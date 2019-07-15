@@ -146,3 +146,16 @@ fi
 
 export VISUAL=vim
 export EDITOR="$VISUAL"
+
+# Start all sessions in screen when running on server
+if [ "$computer_type" == "server" ]; then
+    if [ -d /usr/bin/screen ]; then
+        echo Server
+        if [ -z "$STY" ]; then 
+            screen -R;
+            exit
+        fi
+    else
+        echo "Warning, no screen binary found"
+    fi
+fi

@@ -232,3 +232,4 @@ for_window [class="Steam" title="Steam - Self Updater"] floating enable
 # Citrix workspace
 for_window [class="Wfica"] border pixel 0
 for_window [class="PrimaryAuthManager"] floating enable
+for_window [class="Selfservice"] floating enable

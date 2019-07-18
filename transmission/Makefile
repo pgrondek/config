@@ -8,8 +8,8 @@ MIMEAPPS_LIST=$(HOME)/.config/mimeapps.list
 APPLICATIONS_MIMEAPPS_LIST=$(HOME)/.local/share/applications/mimeapps.list
 
 TRANSMISSION_MIME=mimeapps.list
-TRANSMISSION_DESKTOP_ENTRY=transmission.desktop
-TRANSMISSION_DESKTOP_ENTRY_OUT=$(HOME)/.local/share/applications/transmission.desktop
+TRANSMISSION_DESKTOP_ENTRY=transmission-remote.desktop
+TRANSMISSION_DESKTOP_ENTRY_OUT=$(HOME)/.local/share/applications/transmission-remote.desktop
 
 ROOT_APT=sudo aptitude
 

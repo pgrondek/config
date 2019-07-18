@@ -1,4 +1,4 @@
 [Desktop Entry]
 Type=Application
-Name=Transmission
+Name=Transmission Remote
 Exec=/usr/bin/env transmission-add %U

@@ -1,2 +1,2 @@
-x-scheme-handler/magnet=transmission.desktop
-application/x-bittorrent=transmission.desktop
+x-scheme-handler/magnet=transmission-remote.desktop
+application/x-bittorrent=transmission-remote.desktop

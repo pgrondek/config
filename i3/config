@@ -222,6 +222,7 @@ exec --no-startup-id compton --config ~/.config/compton.conf -b
 exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
 
 for_window [class="Firefox" instance="Navigator"] border pixel 0
+for_window [class="Firefox" instance="Toolkit"] border pixel 0
 for_window [class="jetbrains-toolbox"] floating enable
 for_window [class="Slack"] border pixel 0
 for_window [class="^jetbrains-.+"][window_type=dialog] floating enable

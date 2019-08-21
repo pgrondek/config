@@ -1,5 +1,5 @@
-REQUIRED_BINS=/usr/bin/i3 /usr/bin/i3blocks /usr/bin/i3lock /usr/bin/dunst /usr/bin/compton
-PACKAGES=i3 i3blocks i3lock dunst compton
+REQUIRED_BINS=/usr/bin/i3 /usr/bin/i3blocks /usr/bin/i3lock /usr/bin/dunst /usr/bin/compton /usr/bin/numlockx
+PACKAGES=i3 i3blocks i3lock dunst compton numlockx
 
 I3_CONFIG=config
 I3_CONFIG_OUT=$(HOME)/.config/i3/config

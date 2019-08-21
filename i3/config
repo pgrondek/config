@@ -226,6 +226,9 @@ bindsym Mod4+F1 exec firefox
 bindsym Mod4+F2 exec nautilus
 bindsym Mod4+F3 exec gedit
 
+# Numlock on
+exec_always --no-startup-id numlockx
+
 for_window [class="Firefox" instance="Navigator"] border pixel 0
 for_window [class="Firefox" instance="Toolkit"] border pixel 0
 for_window [class="jetbrains-toolbox"] floating enable

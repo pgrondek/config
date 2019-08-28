@@ -1,4 +1,4 @@
-BASH_ALIASES=bash_aliases
+BASH_ALIASES=.bash_aliases
 BASH_ALIASES_OUT=$(HOME)/.bash_aliases
 BASHRC=bashrc
 BASHRC_OUT=$(HOME)/.bashrc

@@ -21,3 +21,11 @@ set showcmd " show command in bar
 set number " show line numbers
 set wildmenu " visual autocomplete for command menu
 set tabpagemax=10
+
+function Xsudo()
+    :w !sudo tee %
+    :q!
+endfunction
+
+command Wsudo :w !sudo tee %
+command Xsudo exec Xsudo()

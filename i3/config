@@ -221,6 +221,9 @@ exec --no-startup-id compton --config ~/.config/compton.conf -b
 # polkit for authentication as root
 exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
 
+# autolock
+exec xautolock -time 5m -locker ~/bin/lock -notify 10s
+
 # Shortcuts
 bindsym Mod4+F1 exec firefox
 bindsym Mod4+F2 exec nautilus

@@ -81,4 +81,4 @@ clean_bins:
 	rm -f $(CUSTOM_BINS:bin%=$(CUSTOM_BINS_DIR)%)
 
 $(CUSTOM_BINS_DIR):
-	mkdir -p $(CUSTOM_BINS) $(CUSTOM_BINS_DIR)
+	mkdir -p $(CUSTOM_BINS_DIR)

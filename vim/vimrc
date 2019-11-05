@@ -4,6 +4,7 @@ set autoindent
 set softtabstop=4
 set tabstop=4
 set expandtab
+autocmd FileType make setlocal noexpandtab
 
 " Search
 set incsearch

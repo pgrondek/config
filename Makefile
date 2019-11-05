@@ -1,4 +1,4 @@
-SUB_DIRS=bash i3 packages ssh vim
+SUB_DIRS=bash i3 packages ssh vim docker
 
 .PHONY: clean_install
 

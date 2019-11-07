@@ -7,7 +7,8 @@ REQUIRED_BINS=\
 	/usr/bin/compton \
 	/usr/bin/numlockx \
 	/usr/bin/gedit \
-	/usr/lib/policykit-1/polkit-gnome-authentication-agent-1
+	/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 \
+	/usr/bin/gsimplecal
 
 PACKAGES=\
 	i3 \
@@ -18,7 +19,8 @@ PACKAGES=\
 	numlockx \
 	gedit \
 	xautolock \
-	policykit-1-gnome
+	policykit-1-gnome \
+	gsimplecal
 
 I3_CONFIG=config
 I3_CONFIG_OUT=$(HOME)/.config/i3/config

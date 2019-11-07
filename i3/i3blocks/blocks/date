@@ -3,3 +3,10 @@
 FORMAT=+%Y.%m.%d\ %H:%M
 
 date "$FORMAT"
+
+case $BLOCK_BUTTON in
+  1) gsimplecal ;; # left click?
+  3) ;; # right click
+  4) ;; # scroll up
+  5) ;; # scroll down
+esac

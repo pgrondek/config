@@ -1,13 +1,22 @@
 #!/usr/bin/env bash
 
 output=eDP-1
-brightness=$(xrandr --verbose | grep Brightness | awk '{printf "%d", $2*100}')
+brightness=?
 
-echo $brightness
+get_brighntess() {
+    brightness=$(xrandr --verbose | grep Brightness | awk '{printf "%d", $2*100}')
+}
+
+print_bringtness() {
+    get_brighntess
+    echo $brightness
+}
 
 set_brightness() {
     xrandr --output $output --brightness $(echo $1 | awk '{printf "%0.2f", $1/100}' )
 }
+
+get_brighntess
 
 case $BLOCK_BUTTON in
     4) set_brightness $((brightness + 10 ))
@@ -16,3 +25,5 @@ case $BLOCK_BUTTON in
     5) set_brightness $((brightness - 10 ))
         ;; # scroll down
 esac
+
+print_bringtness

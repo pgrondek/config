@@ -1,13 +1,24 @@
 REQUIRED_BINS=\
-    /usr/bin/i3 \
-    /usr/bin/i3blocks \
-    /usr/bin/i3lock \
-    /usr/bin/xautolock \
-    /usr/bin/dunst \
-    /usr/bin/compton \
-    /usr/bin/numlockx \
-    /usr/bin/gedit
-PACKAGES=i3 i3blocks i3lock dunst compton numlockx gedit xautolock
+	/usr/bin/i3 \
+	/usr/bin/i3blocks \
+	/usr/bin/i3lock \
+	/usr/bin/xautolock \
+	/usr/bin/dunst \
+	/usr/bin/compton \
+	/usr/bin/numlockx \
+	/usr/bin/gedit \
+	/usr/lib/policykit-1/polkit-gnome-authentication-agent-1
+
+PACKAGES=\
+	i3 \
+	i3blocks \
+	i3lock \
+	dunst \
+	compton \
+	numlockx \
+	gedit \
+	xautolock \
+	policykit-1-gnome
 
 I3_CONFIG=config
 I3_CONFIG_OUT=$(HOME)/.config/i3/config
@@ -41,7 +52,7 @@ $(REQUIRED_BINS):
 clean_i3:
 	rm -f $(OUT)
 
-install_i3: $(I3_CONFIG_DIR)
+install_i3: $(I3_CONFIG_DIR) $(REQUIRED_BINS)
 	cp $(I3_CONFIG) $(I3_CONFIG_OUT)
 
 $(I3_CONFIG_DIR):

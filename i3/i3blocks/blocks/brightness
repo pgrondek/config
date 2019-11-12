@@ -7,13 +7,9 @@ get_brighntess() {
     brightness=$(xrandr --verbose | grep Brightness | awk '{printf "%d", $2*100}')
 }
 
-print_bringtness() {
-    get_brighntess
-    echo $brightness
-}
-
 set_brightness() {
     xrandr --output $output --brightness $(echo $1 | awk '{printf "%0.2f", $1/100}' )
+    brightness=$1
 }
 
 get_brighntess
@@ -26,4 +22,4 @@ case $BLOCK_BUTTON in
         ;; # scroll down
 esac
 
-print_bringtness
+echo $brightness

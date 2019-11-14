@@ -11,10 +11,11 @@ FIREFOX=/usr/bin/firefox
 SCREEN=/usr/bin/screen
 HTOP=/usr/bin/htop
 TMUX=/usr/bin/tmux
+GRAPHVIZ=/opt/local/bin/dot
 
 INSTALL=$(ROOT_APT) install -y
 
-install: $(APTITUDE) $(VIM) $(GIT) $(FIREFOX) $(SCREEN) $(HTOP) $(TMUX)
+install: $(APTITUDE) $(VIM) $(GIT) $(FIREFOX) $(SCREEN) $(HTOP) $(TMUX) $(GRAPHVIZ)
 	$(ROOT_APT) update
 	$(INSTALL) $(PACKAGES)
 	$(ROOT_APT) purge -y $(RM_PACKAGES)
@@ -44,3 +45,6 @@ $(HTOP): $(APTITUDE)
 
 $(TMUX): $(APTITUDE)
 	$(INSTALL) tmux
+
+$(GRAPHVIZ): $(APTITUDE)
+	$(INSTALL) graphviz

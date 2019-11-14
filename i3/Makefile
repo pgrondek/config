@@ -45,7 +45,7 @@ OUT=$(I3_CONFIG_OUT) $(DUNST_CONFIG_OUT)
 
 clean_install: clean install
 clean: clean_i3 clean_dunst clean_compton clean_i3blocks clean_bins
-install: $(REQUIRED_BINS) install_i3 install_dunst install_compton install_i3blocks install_bins
+install: $(REQUIRED_BINS) install_i3 install_compton install_i3blocks install_bins clean_dunst
 
 $(REQUIRED_BINS):
 	$(ROOT_APT) install $(PACKAGES)
@@ -70,12 +70,6 @@ clean_i3blocks:
 # dunst
 clean_dunst:
 	rm -f $(DUNST_CONFIG_OUT)
-
-install_dunst: $(DUNST_CONFIG_DIR)
-	cp $(DUNST_CONFIG) $(DUNST_CONFIG_OUT)
-
-$(DUNST_CONFIG_DIR):
-	mkdir -p $(DUNST_CONFIG_DIR)
 
 # compton
 clean_compton:

@@ -4,7 +4,7 @@ output=eDP-1
 brightness=?
 
 get_brighntess() {
-    brightness=$(xrandr --verbose | grep Brightness | awk '{printf "%d", $2*100}')
+    brightness=$(xrandr --verbose | grep -m 1 Brightness | awk '{printf "%d", $2*100}')
 }
 
 set_brightness() {

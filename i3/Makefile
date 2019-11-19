@@ -1,3 +1,5 @@
+include *.mk
+
 REQUIRED_BINS=\
 	/usr/bin/i3 \
 	/usr/bin/i3blocks \
@@ -44,8 +46,8 @@ OUT=$(I3_CONFIG_OUT) $(DUNST_CONFIG_OUT)
 .PHONY: clean_install
 
 clean_install: clean install
-clean: clean_i3 clean_dunst clean_compton clean_i3blocks clean_bins
-install: $(REQUIRED_BINS) install_i3 install_compton install_i3blocks install_bins clean_dunst
+clean: clean_i3 clean_dunst clean_compton clean_i3blocks clean_bins clean_playerctl
+install: $(REQUIRED_BINS) install_i3 install_compton install_i3blocks install_bins clean_dunst install_playerctl
 
 $(REQUIRED_BINS):
 	$(ROOT_APT) install $(PACKAGES)

@@ -1,3 +1,5 @@
+include *.mk
+
 CONFIG=config
 CONFIG_OUT=$(HOME)/.config/i3blocks/config
 CONFIG_DIR=$(HOME)/.config/i3blocks
@@ -9,11 +11,11 @@ OUT=$(I3_CONFIG_OUT)
 
 clean_install: clean install
 
-clean:
+clean: clean_gsimplecal
 	rm -rf $(CONFIG_OUT)
 	rm -rf $(CONFIG_DIR)
 
-install: $(CONFIG_DIR)
+install: $(CONFIG_DIR) install_gsimplecal
 	cp $(CONFIG) $(CONFIG_OUT)
 	cp $(BLOCKS) $(CONFIG_DIR)
 

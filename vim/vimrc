@@ -20,6 +20,7 @@ set laststatus=2 " Always show a status bar
 set scrolloff=3 " Keep n lines when scrolling
 set showcmd " show command in bar
 set number " show line numbers
+set relativenumber " relative line numbers
 set wildmenu " visual autocomplete for command menu
 set tabpagemax=10
 

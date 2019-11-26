@@ -1,4 +1,4 @@
-SERVER_PARTS=bash ssh vim docker
+SERVER_PARTS=bash ssh vim docker terraform
 CLIENT_PARTS=i3 packages
 
 .PHONY: clean_install

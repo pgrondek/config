@@ -118,17 +118,6 @@ set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
 
-# More workspaces
-set $alt-ws1 "A1"
-set $alt-ws2 "A2"
-set $alt-ws3 "A3"
-set $alt-ws4 "A4"
-set $alt-ws5 "A5"
-set $alt-ws6 "A6"
-set $alt-ws7 "A7"
-set $alt-ws8 "A8"
-set $alt-ws9 "A9"
-set $alt-ws10 "A10"
 
 # switch to workspace
 bindsym Mod4+1 workspace $ws1
@@ -142,17 +131,6 @@ bindsym Mod4+8 workspace $ws8
 bindsym Mod4+9 workspace $ws9
 bindsym Mod4+0 workspace $ws10
 
-bindsym Mod1+1 workspace $alt-ws1
-bindsym Mod1+2 workspace $alt-ws2
-bindsym Mod1+3 workspace $alt-ws3
-bindsym Mod1+4 workspace $alt-ws4
-bindsym Mod1+5 workspace $alt-ws5
-bindsym Mod1+6 workspace $alt-ws6
-bindsym Mod1+7 workspace $alt-ws7
-bindsym Mod1+8 workspace $alt-ws8
-bindsym Mod1+9 workspace $alt-ws9
-bindsym Mod1+0 workspace $alt-ws10
-
 # move focused container to workspace
 bindsym Mod4+Shift+1 move container to workspace $ws1
 bindsym Mod4+Shift+2 move container to workspace $ws2
@@ -164,18 +142,6 @@ bindsym Mod4+Shift+7 move container to workspace $ws7
 bindsym Mod4+Shift+8 move container to workspace $ws8
 bindsym Mod4+Shift+9 move container to workspace $ws9
 bindsym Mod4+Shift+0 move container to workspace $ws10
-
-bindsym Mod1+Shift+1 move container to workspace $alt-ws1
-bindsym Mod1+Shift+2 move container to workspace $alt-ws2
-bindsym Mod1+Shift+3 move container to workspace $alt-ws3
-bindsym Mod1+Shift+4 move container to workspace $alt-ws4
-bindsym Mod1+Shift+5 move container to workspace $alt-ws5
-bindsym Mod1+Shift+6 move container to workspace $alt-ws6
-bindsym Mod1+Shift+7 move container to workspace $alt-ws7
-bindsym Mod1+Shift+8 move container to workspace $alt-ws8
-bindsym Mod1+Shift+9 move container to workspace $alt-ws9
-bindsym Mod1+Shift+0 move container to workspace $alt-ws10
-
 
 # reload the configuration file
 bindsym Mod4+Shift+c reload

@@ -107,28 +107,28 @@ bindsym Mod4+minus scratchpad show
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1.S"
-set $ws2 "2.S"
-set $ws3 "3.S"
-set $ws4 "4.S"
-set $ws5 "5.S"
-set $ws6 "6.S"
-set $ws7 "7.S"
-set $ws8 "8.S"
-set $ws9 "9.S"
-set $ws10 "10.S"
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+set $ws10 "10"
 
 # More workspaces
-set $alt-ws1 "1.A"
-set $alt-ws2 "2.A"
-set $alt-ws3 "3.A"
-set $alt-ws4 "4.A"
-set $alt-ws5 "5.A"
-set $alt-ws6 "6.A"
-set $alt-ws7 "7.A"
-set $alt-ws8 "8.A"
-set $alt-ws9 "9.A"
-set $alt-ws10 "10.A"
+set $alt-ws1 "A1"
+set $alt-ws2 "A2"
+set $alt-ws3 "A3"
+set $alt-ws4 "A4"
+set $alt-ws5 "A5"
+set $alt-ws6 "A6"
+set $alt-ws7 "A7"
+set $alt-ws8 "A8"
+set $alt-ws9 "A9"
+set $alt-ws10 "A10"
 
 # switch to workspace
 bindsym Mod4+1 workspace $ws1

@@ -1,5 +1,5 @@
-TODO: Main makefile
 TODO: Move sanitaze-folders to own makefile
+TODO: sanitaze-folders with all dirs
 TODO: [packages] separate every package to separate task
 TODO: run apt with sudo only when needed (id!=0)
 TODO: gitignore

@@ -143,5 +143,6 @@ if [ -d ~/.sdkman ]; then
     [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 fi
 
+shopt -s autocd
 export VISUAL=vim
 export EDITOR="$VISUAL"

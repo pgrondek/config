@@ -1,0 +1,6 @@
+[user]
+	name = Przemysław Grondek
+[help]
+	autocorrect = 1
+[remotes]
+	prune = true

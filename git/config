@@ -4,3 +4,6 @@
 	autocorrect = 1
 [remotes]
 	prune = true
+[pull]
+	rebase = true
+

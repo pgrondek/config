@@ -186,7 +186,7 @@ bar {
 
 bindsym Mod4+Escape exec lock
 
-set $displayMode "Set display mode [w]ork [l]aptop"
+set $displayMode "Set display mode [w]ork [l]aptop [m]irror"
 bindsym Mod4+x mode $displayMode
 
 mode $displayMode {
@@ -194,6 +194,9 @@ mode $displayMode {
         mode "default"
 
     bindsym w exec "multi-monitor" \
+        mode "default"
+    
+    bindsym m exec "mirror-monitor" \
         mode "default"
 
     bindsym Return mode "default"

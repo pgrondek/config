@@ -3,3 +3,4 @@ TODO: sanitaze-folders with all dirs
 TODO: [packages] separate every package to separate task
 TODO: run apt with sudo only when needed (id!=0)
 TODO: gitignore
+TODO: use AppImage/download directly from developer site

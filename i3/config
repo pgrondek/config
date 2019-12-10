@@ -186,6 +186,18 @@ bar {
 
 bindsym Mod4+Escape exec lock
 
+set $mirrorDisplayMode "1)VGA 2)HDMI"
+mode $mirrorDisplayMode {
+    bindsym 1 exec "mirror-monitor-vga" \
+        mode "default"
+
+    bindsym 2 exec "mirror-monitor-hdmi" \
+        mode "default"
+
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
 set $displayMode "Set display mode [w]ork [l]aptop [m]irror"
 bindsym Mod4+x mode $displayMode
 
@@ -196,8 +208,7 @@ mode $displayMode {
     bindsym w exec "multi-monitor" \
         mode "default"
     
-    bindsym m exec "mirror-monitor" \
-        mode "default"
+    bindsym m mode $mirrorDisplayMode
 
     bindsym Return mode "default"
     bindsym Escape mode "default"

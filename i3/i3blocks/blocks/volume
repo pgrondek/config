@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # Copyright (C) 2014 Julien Bonjean <julien@bonjean.info>
 # Copyright (C) 2014 Alexander Keller <github@nycroth.com>
+# Copyright (C) 2019 Przemysław Grondek <przemek@grondek.pl>
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -75,6 +76,7 @@ format() {
 #------------------------------------------------------------------------
 
 case $BLOCK_BUTTON in
+  1) pavucontrol ;; # Launch audio control
   3) amixer -q -D $MIXER sset $SCONTROL $(capability) toggle ;;  # right click, mute/unmute
   4) amixer -q -D $MIXER sset $SCONTROL $(capability) ${STEP}+ unmute ;; # scroll up, increase
   5) amixer -q -D $MIXER sset $SCONTROL $(capability) ${STEP}- unmute ;; # scroll down, decrease

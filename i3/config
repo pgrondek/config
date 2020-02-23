@@ -262,6 +262,7 @@ exec_always --no-startup-id numlockx
 
 for_window [class="Firefox" instance="Navigator"] border pixel 0
 for_window [class="Firefox" instance="Toolkit"] border pixel 0
+for_window [class="Firefox" window_role="PictureInPicture"] border pixel 0, floating enable, sticky enable
 for_window [class="jetbrains-toolbox"] floating enable
 for_window [class="Slack"] border pixel 0
 for_window [class="^jetbrains-.+"][window_type=dialog] floating enable

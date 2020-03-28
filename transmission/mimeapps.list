@@ -1,2 +1,3 @@
+[Default Applications]
 x-scheme-handler/magnet=transmission-remote.desktop
 application/x-bittorrent=transmission-remote.desktop

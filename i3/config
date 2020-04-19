@@ -235,9 +235,6 @@ exec --no-startup-id compton --config ~/.config/compton.conf -b
 # polkit for authentication as root
 exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
 
-# redshift
-exec --no-startup-id /usr/bin/redshift
-
 # autolock
 exec xautolock -time 5 -locker ~/bin/lock -notify 10
 
